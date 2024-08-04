@@ -531,33 +531,55 @@ audio {
 @media(max-width:1355px)
 {
   #demos-right {
-    width: 40%;
+    width: 30%;
     max-width: 400px;
   }
+  .demos-child {width: 80%; margin: auto}
 
   .studio-child {width: 310px;}
+  .contact-content {margin-top:15%;}
 }
 
-@media(max-width:800px)
+@media(max-width: 1007px) {
+  li {display: none;}
+  ul{display: none;}
+  
+  .demos-parent {display: block; background-color:}
+  .demos-child {width: 80%; margin: auto}
+  .demos-left {width: 100%; padding-bottom: 5%;}
+
+  #demos-right {width: 70%; max-width: 1300px; margin: auto;}
+  .demos-holder {width: 100%; max-width: none;}
+
+  .studio-child {width: 30%;}
+
+  .contact-content {margin-top:15%;}
+}
+
+@media(max-width: 640px)
 {
   li {display: none;}
+  ul{display: none;}
 
-  .demos-parent {display: block;}
-  .demos-child {width: 87%; padding: none;}
-  .demos-left {width: 113%;}
-  .header-text {width: 103%; padding-bottom: 2px;}
+  .demos-parent {display: block; background-color:}
+  .demos-child {width: 100%;}
+  .demos-left {width: 100%;}
 
-  .studio-parent {display:block;}
+  #demos-right {width: 85%; max-width: 1300px;}
+  .demos-holder {width: 100%; max-width: none;}
+
   .studio-child {margin: auto; width: 100%;}
-  .studio-text {padding-top: 3px;}
   #studio-text-gone {display: block;}
   #studio-child-gone {display: none;}
   #studio-icon {display: none;}
+  #studio {margin-top: 5%;}
 
-  .contact-content {margin-top:40%;}
+  .contact-content {margin-top:70%;}
+  .social-a {display: none;}
   .content-head {padding-top: 10%;}
-}
 
+  svg{display: none;}
+}
 
 
 
