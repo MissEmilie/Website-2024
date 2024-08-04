@@ -9,14 +9,14 @@ body {
   src: url(VOstuff/amiah/Amiah.otf);
 }
 h1 {
-  font-size: 54px;
+  font-size: 3.375rem;
   color:#16bac5;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 h2 {
-  font-size: 30px;
+  font-size: 1.875rem;
   color:#16bac5;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 0px;
@@ -24,7 +24,7 @@ h2 {
 h3 {font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 p {text-align: justify; 
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 18px;
+  font-size: 1.1rem;
 }
 svg {z-index: 2;}
 html {scroll-behavior: smooth;}
@@ -43,7 +43,7 @@ li {list-style-type: none;}
 
 .name {
   font-family: amiah;
-  font-size: 54px;
+  font-size: 3.375rem;
   color:#A681D5;
 }
 .nav-button {
@@ -133,7 +133,7 @@ li {list-style-type: none;}
 }
 .purple-title {
   color:#28184e;
-  font-size: 36px;
+  font-size: 2.25rem;
 }
 .studio-parent {
   justify-content: space-between;
@@ -252,7 +252,7 @@ li {list-style-type: none;}
 .blue-title {
   color:#16bac5;
   margin: 0px;
-  font-size: 36px;
+  font-size: 2.25rem;
 }
 .content-head {
   display: flex;
@@ -322,7 +322,7 @@ form{
   padding-bottom: 10px;
 }
 .footer-text {
-  font-size: 14px;
+  font-size: 0.87rem;
   color: #16bac5;
   text-align: center;
 }
