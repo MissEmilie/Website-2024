@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <head>
   <title>Emilie Brewer | Broadcast Quality Home Studio</title>
+  <meta name="viewport" content="width:device-width, initial-scale-1:1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <link rel="stylesheet" type="text/css" href="EmilieBrewerStudio.css"/>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <meta name="description" content="Emilie Brewer is a Canadian voice actor specializing in video game, animation, and commercial voice over with a versatile voice range and broadcast quality home studio." />
 
@@ -13,7 +18,7 @@
   <meta property="og:title" content="Emilie Brewer | Broadcast Quality Home Studio"/>
   <meta property="og:url" content="https://emiliebrewer.com/home-studio" />
   <meta property="og:type" content="website" />
-  <meta property="og-description" content="Emilie Brewer is a Canadian voice actor specializing in video games, animation, and commercials with a versatile voice range and broadcast quality home studio." />
+  <meta property="og-description" content="Emilie Brewer is a Canadian voice actor specializing in video game, animation, and commercial voice over with a versatile voice range and broadcast quality home studio." />
 
   <meta itemprop="name" content="Emilie Brewer | Broadcast Quality Home Studio"/>
   <meta itemprop="url" content="https://emiliebrewer.com/home-studio" />
@@ -27,28 +32,45 @@
 
 
 
+
 <header itemtype="https://schema.org/WPHeader" itemscope="itemscope" id="header">
   
   <div class="header-parent">
 
     <nav itemtype="https://schema.org/SiteNavigationElement" itemscope="itemscope">
 
-          <ul class="header-ul">
+          <ul>
             <h2 class="name">Emilie★Brewer</h2>
 
-            <li class="header-li"><a class="nav-button" href="https://emiliebrewer.com"><h3>☆Demos</h3></a></li>
+            <li><a class="nav-button" href="https://emiliebrewer.com"><h3>☆Demos</h3></a></li>
 
-            <li class="header-li"><a class="nav-button" href="https://emiliebrewer.com/home-studio"><h3>☆Studio</h3></a></li>
+            <li><a class="nav-button" href="https://emiliebrewer.com/home-studio"><h3>☆Studio</h3></a></li>
     
-            <li class="header-li"><a class="nav-button" href="https://emiliebrewer.com/about"><h3>☆About<h3></a></li>
+            <li><a class="nav-button" href="https://emiliebrewer.com/about"><h3>☆About<h3></a></li>
     
-            <li class="header-li"><a class="nav-button" href="https:emiliebrewer.com/credits"><h3>☆Credits</h3></a></li>
+            <li><a class="nav-button" href="https:emiliebrewer.com/credits"><h3>☆Credits</h3></a></li>
     
-            <li class="header-li"><a class="nav-button" href="https://emiliebrewer.com/contact"><h3>☆Contact</h3></a></li>
+            <li><a class="nav-button" href="https://emiliebrewer.com/contact"><h3>☆Contact</h3></a></li>
 
           </ul>
 
       </nav>
+
+      <div itemtype="https://schema.org/SiteNavigationElement" itemscope="itemscope" class="topnav">
+        <a href="https://emiliebrewer.com" class="active"><h2 id="full-name" class="name-mobile">Emilie★Brewer</h2> <h2 id="half-name" class="name-mobile">EB★</h2></a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+          <a href="https://emiliebrewer.com">☆Demos</a>
+          <a href="https://emiliebrewer.com/home-studio">☆Studio</a>
+          <a href="https://emiliebrewer.com/about">☆About</a>
+          <a href="https://emiliebrewer.com/credits">☆Credits</a>
+          <a href="https://emiliebrewer.com/contact">☆Contact</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
 </header>
 
 <main>
@@ -152,6 +174,15 @@
 
 
 <script>
+
+    function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
   
 
   (function () {
