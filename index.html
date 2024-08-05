@@ -53,6 +53,23 @@
 
       </nav>
 
+          <div class="topnav">
+        <a href="https://emiliebrewer.com" class="active"><h2 id="full-name" class="name-mobile">Emilie★Brewer</h2> <h2 id="half-name" class="name-mobile">EB★</h2></a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+          <a href="https://emiliebrewer.com">☆Demos</a>
+          <a href="https://emiliebrewer.com/home-studio">☆Studio</a>
+          <a href="https://emiliebrewer.com/about">☆About</a>
+          <a href="https://emiliebrewer.com/credits">☆Credits</a>
+          <a href="https://emiliebrewer.com/contact">☆Contact</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      
+
 
     <div class="demos-parent">
       <div class="demos-child">
@@ -330,6 +347,16 @@
 
 
 <script>
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+  
   window.onload = function() {
   // Reset the form fields when the page loads
   document.getElementById("form").reset();
