@@ -161,8 +161,15 @@ li {list-style-type: none;}
 .social-a:hover{
   filter: invert(92%) sepia(8%) saturate(1554%) hue-rotate(38deg) brightness(104%) contrast(81%);
 }
-
-
+.social-a-head{
+  cursor: pointer;
+  transition: color, 0.3s;
+  filter: invert(61%) sepia(38%) saturate(4108%) hue-rotate(143deg) brightness(100%) contrast(83%);
+  text-decoration: none;
+}
+.social-a-head:hover{
+  filter: invert(92%) sepia(8%) saturate(1554%) hue-rotate(38deg) brightness(104%) contrast(81%);
+}
 
 
 
@@ -568,6 +575,7 @@ audio {
 }
 #raw-button {background-color:#201e48}
 #raw-button:hover {background-color: #8963BA}
+
 @media(max-width:1355px)
 {
   #demos-right {
@@ -583,8 +591,8 @@ audio {
   ul{display: none;}
   .topnav {display: block;}
   
-  .demos-parent {display: block; background-color:}
-  .demos-child {width: 80%; margin: auto}
+  .demos-parent {display: block; padding-bottom: 10%;}
+  .demos-child {width: 80%; margin: auto;}
   .demos-left {width: 100%; padding-bottom: 5%;}
 
   #demos-right {width: 70%; max-width: 1300px; margin: auto;}
@@ -602,7 +610,8 @@ audio {
 
   .topnav {display: block;}
 
-  .demos-parent {display: block; background-color:}
+  h1 {font-size: 3rem;}
+  .demos-parent {display: block; padding-bottom: 10%;}
   .demos-child {width: 100%;}
   .demos-left {width: 100%;}
 
