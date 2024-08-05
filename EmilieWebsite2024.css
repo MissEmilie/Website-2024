@@ -46,6 +46,12 @@ li {list-style-type: none;}
   font-size: 3.375rem;
   color:#A681D5;
 }
+.name-mobile {  
+  font-family: amiah;
+  font-size: 3.375rem;
+  color:#A681D5;
+  margin-top: -10px;
+}
 .nav-button {
   transition: color, 0.3s;
   font-size: larger;
@@ -55,6 +61,41 @@ li {list-style-type: none;}
   text-decoration: none;
 }
 .nav-button:hover {color:#c6e7a3}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #201e48;
+  position: relative;
+  display: none;
+}
+.topnav #myLinks {
+  display: none;
+}
+.topnav a {
+  color: #16bac5;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: block;
+}
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 30px;
+  margin-top: 10px;
+}
+.topnav a:hover {
+  background-color: #c8aeeb;
+  color: #0d113f;
+}
+.active {
+  background-color: #201e48;
+  color: white;
+  height: 60px;
+}
 
 #header {
   background-color: #201e48;
@@ -527,22 +568,20 @@ audio {
 }
 #raw-button {background-color:#201e48}
 #raw-button:hover {background-color: #8963BA}
-
 @media(max-width:1355px)
 {
   #demos-right {
-    width: 30%;
+    width: 80%;
     max-width: 400px;
   }
-  .demos-child {width: 80%; margin: auto}
 
   .studio-child {width: 310px;}
-  .contact-content {margin-top:15%;}
 }
 
 @media(max-width: 1007px) {
   li {display: none;}
   ul{display: none;}
+  .topnav {display: block;}
   
   .demos-parent {display: block; background-color:}
   .demos-child {width: 80%; margin: auto}
@@ -560,6 +599,8 @@ audio {
 {
   li {display: none;}
   ul{display: none;}
+
+  .topnav {display: block;}
 
   .demos-parent {display: block; background-color:}
   .demos-child {width: 100%;}
@@ -581,21 +622,10 @@ audio {
   svg{display: none;}
 }
 
+@media(max-width: 543px)
+{
+  #full-name {display: none;}
+  #half-name {display: block;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .topnav {display: block;}
+}
