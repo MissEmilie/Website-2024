@@ -54,22 +54,17 @@ footer {
   margin-top: -12%;
   max-width: 1300px;
 }
-img {
-  width: 600px;
-  padding-top: 8%;
-}
 
+.contact-h3 {color: #201e48}
 .name {
   font-family: amiah;
   font-size: 3.375rem;
   color:#A681D5;
-  margin-top: -10px;
 }
 .name-mobile {  
   font-family: amiah;
   font-size: 3.375rem;
   color:#A681D5;
-  margin-top: -10px;
 }
 .nav-button {
   transition: color, 0.3s;
@@ -123,10 +118,6 @@ img {
   margin: auto;
 }
 
-.about-holder {display: flex;}
-
-
-
 .background {background-color: #201e48;}
 .nav {
   display: flex;
@@ -153,7 +144,14 @@ img {
   font-size: 18px;
   text-decoration: none;
 }
+.email-head {
+  transition: color, 0.3s;
+  color: #8963BA;
+  font-size: 18px;
+  text-decoration: none;
+}
 .email:hover {color:#c6e7a3}
+.email-head:hover {color:#201e48;}
 .social-a{
   cursor: pointer;
   transition: color, 0.3s;
@@ -163,7 +161,53 @@ img {
 .social-a:hover{
   filter: invert(92%) sepia(8%) saturate(1554%) hue-rotate(38deg) brightness(104%) contrast(81%);
 }
+.resume-holder {text-align: center;}
 
+
+
+input:focus, textarea:focus {
+  outline: none;
+}
+
+form{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.form-container{
+  margin-top: 40px;
+}
+#subject{
+  border:none;
+  height:200px;
+  resize: none;
+}
+
+#email-address,
+#lname,#fname,#subject{
+  background-color: #A681D5;
+  padding:15px 10px;
+  width:80%;
+  color:#201e48;
+  border: none;
+}
+#send-button{
+  cursor: pointer;
+  padding:15px 10px;
+  width:80%;
+  background-color: #8963BA;
+  transition: color, 0.3s;
+  border: none;
+}
+
+#send-button:hover{
+  color: #8963BA;
+  background-color:#201e48;
+}
+#send-button:active{
+  background-color: #A681D5;
+}
 
 @media(max-width: 1007px)
 {
@@ -190,3 +234,4 @@ img {
   .nav {display: none;}
   .footer-right {display: none;}
 }
+
