@@ -338,14 +338,14 @@ form{
 #lname,#fname,#subject{
   background-color: #c0aeeb;
   padding:15px 10px;
-  width:60%;
+  width:80%;
   color:#201e48;
   border: none;
 }
 #send-button{
   cursor: pointer;
   padding:15px 10px;
-  width:60%;
+  width:80%;
   background-color: #16bac5;
   transition: color, 0.3s;
   border: none;
