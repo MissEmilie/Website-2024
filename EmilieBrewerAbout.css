@@ -178,14 +178,14 @@ form{
 .form-container{
   margin-top: 40px;
 }
-#subject{
+#message{
   border:none;
   height:200px;
   resize: none;
 }
 
 #email-address,
-#lname,#fname,#subject{
+#lname,#fname,#message{
   background-color: #A681D5;
   padding:15px 10px;
   width:80%;
