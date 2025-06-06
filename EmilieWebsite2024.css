@@ -239,7 +239,7 @@ li {list-style-type: none;}
 }
 .studio-child {
   border: 5px solid var(--color-large-text);
-  min-height: 525px;
+  min-height: 550px;
   max-width:350px;
   width: 33%;
   display: flex;
