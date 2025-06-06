@@ -163,7 +163,7 @@ li {list-style-type: none;}
   padding: 2px;
   margin-inline-end: 5px;
   user-select: none;
-  background-color: var(--color-large-text);
+  background-color: transparent;
   border-radius: 0.8rem;
   cursor: pointer;
   transition: color, 0.3s;
