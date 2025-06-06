@@ -570,8 +570,10 @@ audio {
   }
 
   .studio-child {width: 310px;}
-  #studio-child-gone {display: none;}
 }
+
+@media(max-width:1200px)
+{ #studio-child-gone {display: none;}}
 
 @media(max-width: 1007px) {
   li {display: none;}
