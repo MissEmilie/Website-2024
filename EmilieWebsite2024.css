@@ -18,7 +18,7 @@ h1 {
 }
 h2 {
   font-size: 1.875rem;
-  color:var(--color-large-text);
+  color: var(--color-large-text);
   font-family: 'Cinzel', serif;
   margin-top: -8px;
 }
@@ -48,13 +48,11 @@ li {list-style-type: none;}
   font-family: amiah;
   font-size: 3.375rem;
   color: var(--color-accent);
-  text-shadow: 0 0 4px var(--color-accent);
 }
 .name-mobile {  
   font-family: amiah;
   font-size: 3.375rem;
   color: var(--color-accent);
-  text-shadow: 0 0 4px var(--color-accent);
   margin-top: -10px;
 }
 .nav-button {
@@ -67,14 +65,12 @@ li {list-style-type: none;}
 }
 .nav-button:hover {color: var(--color-accent)}
 
-
 .divider {
   border: none;
   height: 2px;
   background: linear-gradient(to right, transparent, var(--color-small-text), transparent);
   margin: 1em 0;
 }
-
 
 .topnav {
   overflow: hidden;
@@ -111,42 +107,45 @@ li {list-style-type: none;}
 
 #header {background-color: var(--color-bg);}
 .header-parent {margin: auto;}
+.header-text {color: var(--color-small-text);}
+
 .demos-parent {
   display: flex;
   margin: auto;
-  padding-top: 2%;
+  padding: 2%;
   max-width: 1300px;
   width: 90%;
 }
-.header-text {color: var(--color-small-text);}
+#demos-right {
+  border: 3px solid var(--color-large-text);
+  padding-inline: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 1%;
+  padding-bottom: 3%;
+}
 .demos-child {
   width: 48.5%;
-  margin-bottom: 40px;
   padding-inline-end: 5%;
 }
-#demos-right {
-  border-style: solid;
-  border-color: var(--color-large-text);
-  border-width: 3px;
-  padding-inline: 30px;
-  z-index: 1;
+.demo-holder {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
-.demos-child:last-child {padding-bottom: 20px;}
-.demos-holder {
+.demo-buttons {
   display: flex;
   justify-content: space-between;
-  padding: 1%;
+  align-items: center;
 }
-.demo-title {color: var(--color-accent);}
+.demo-title {color: var(--color-accent)}
 .download {
-  border-style: solid;
-  border-width: 1px;
-  border-color: var(--color-accent);
-  background-color: var(--color-bg);
+  border: 1px solid var(--color-accent);
+  background-color: transparent;
   color: var(--color-accent);
   height: 30px;
   transition: color, 0.3s;
-  margin-top: 20px;
   cursor: pointer;
 }
 .download:hover{
@@ -159,8 +158,6 @@ li {list-style-type: none;}
   color: var(--color-accent);
 }
 .email:hover {color: var(--color-contrast-accent)}
-
-
 .socials {
   width: 40px;
   padding: 2px;
@@ -172,6 +169,9 @@ li {list-style-type: none;}
   transition: color, 0.3s;
 }
 .socials:hover {background-color: var(--color-accent);}
+
+
+
 
 
 
@@ -189,6 +189,7 @@ li {list-style-type: none;}
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
+  background-size: contain;
 }
 .slider-img img {
   width: auto;
@@ -197,6 +198,7 @@ li {list-style-type: none;}
   border-radius: 1rem;
   max-width: 250px;
   min-width: 150px;
+  background-size: contain;
 }
 .slider-img:hover .caption {opacity: 1;}
 .caption {
@@ -213,6 +215,8 @@ li {list-style-type: none;}
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
+
+
 
 
 
@@ -234,21 +238,20 @@ li {list-style-type: none;}
   padding-inline: 1%;
 }
 .studio-child {
-  border-style: solid;
-  border-width: 5px;
-  border-color: var(--color-large-text);
+  border: 5px solid var(--color-large-text);
   min-height: 525px;
   max-width:350px;
   width: 33%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 .studio-text {
   padding-inline: 25px;
   line-height: 25px;
 }
 .studio-specs {
-  border-style: solid;
-  border-color: var(--color-large-text);
-  border-width: 3px;
+  border: 3px solid var(--color-large-text);
   margin: auto;
   width: 150px;
   padding: 10px 10px;
@@ -306,6 +309,7 @@ li {list-style-type: none;}
 
 
 
+
 #about {
   padding-top: 5%;
   margin: auto;
@@ -332,10 +336,6 @@ li {list-style-type: none;}
   transition: color, 0.3s;
 }
 .link-p:hover {color: var(--color-contrast-accent);}
-
-
-
-
 #contact {background-color: var(--color-bg);}
 .contact-content {
   max-width: 1300px;
@@ -347,8 +347,9 @@ li {list-style-type: none;}
   display: flex;
   justify-content: space-between;
 }
-.social-holder {margin-top: 10px;}
-
+.social-holder {
+  margin-top: 10px;
+}
 
 
 
@@ -371,20 +372,19 @@ form{
 #email-address,
 #lname,#fname,#message{
   background-color: var(--color-accent);
-  padding: 15px 10px;
-  width: 80%;
-  color: var(--color-large-text;
+  padding:15px 10px;
+  width:80%;
+  color: var(--color-large-text);
   border: none;
 }
 #send-button{
   cursor: pointer;
-  padding: 15px 10px;
-  width: 80%;
-  background-color: var(--color-large-text;
+  padding:15px 10px;
+  width:80%;
+  background-color: var(--color-large-text);
   transition: color, 0.3s;
   border: none;
 }
-
 #send-button:hover{
   color: var(--color-large-text);
   background-color: var(--color-accent);
@@ -419,7 +419,6 @@ form{
 
 
 
-
 /*audio player stuff */
 
 progress {
@@ -435,7 +434,9 @@ progress {
   box-sizing: border-box;
   position: relative;
 }
-progress::-ms-fill {animation-name: none;}
+progress::-ms-fill {
+  animation-name: none;
+}
 progress[value], progress::-webkit-progress-bar, progress[value]::-webkit-progress-value {
   background: none;
   border: none;
@@ -446,8 +447,12 @@ progress[value]::-webkit-progress-value {
   background-color: var(--color-large-text);
   transition: 0.3s background-color;
 }
-progress[value]::-webkit-progress-value:hover {background-color:var(--color-accent)} 
-progress:not([value]) {animation: animate-progress 2s ease infinite;}
+progress[value]::-webkit-progress-value:hover {
+  background-color:var(--color-accent);
+} 
+progress:not([value]) {
+  animation: animate-progress 2s ease infinite;
+}
 @-moz-document url-prefix() {
   progress::-moz-progress-bar {
     background-color: transparent;
@@ -566,7 +571,9 @@ audio {
   position: relative;
   transition: 0.3s background-color;
 }
-[controls] ~ .audio__icon--play:hover {background-color: var(--color-accent);}
+[controls] ~ .audio__icon--play:hover {
+  background-color: var(--color-accent);
+}
 [controls] ~ .audio__icon--pause {
   -webkit-mask: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='642 1586 12 16'%3E%3Cg transform='translate(0 717)'%3E%3Crect width='4' height='16' rx='0' transform='translate(642 869)'/%3E%3Crect width='4' height='16' rx='0' transform='translate(650 869)'/%3E%3C/g%3E%3C/svg%3E");
   -webkit-mask-repeat: no-repeat;
@@ -595,6 +602,12 @@ audio {
 #raw-button {background-color: var(--color-large-text)}
 #raw-button:hover {background-color: var(--color-small-text)}
 
+
+
+
+
+
+
 @media(max-width:1355px)
 {
   #demos-right {
@@ -610,18 +623,19 @@ audio {
   ul{display: none;}
   .topnav {display: block;}
   
-  .demos-parent {display: block; padding-bottom: 10%;}
+  .demos-parent {display: block; padding: 0%;}
   .demos-child {width: 80%; margin: auto;}
-  .demos-left {width: 100%; padding-bottom: 5%;}
-
-  #demos-right {width: 70%; max-width: 1300px; margin: auto;}
-  .demos-holder {width: 100%; max-width: none;}
-
-  .studio-child {width: 30%;}
+  #demos-left {width: 80%; padding-bottom: 5%;}
+  #demos-right {width: 70%; max-width: 1300px;}
 
   .slider-container{display: none;}
   .slider-track{display: none;}
   .slider-img{display:none}
+
+  .studio-child {margin: auto; width: 100%;}
+  #studio-text-gone {display: block;}
+  #studio-child-gone {display: none;}
+  #studio-icon {display: none;}
 
   #email-address,
   #lname,#fname,#message{width: 90%}
@@ -637,15 +651,8 @@ audio {
   h1 {font-size: 3rem;}
   .demos-parent {display: block; padding-bottom: 10%;}
   .demos-child {width: 100%;}
-  .demos-left {width: 100%;}
-
-  #demos-right {width: 85%; max-width: 1300px;}
-  .demos-holder {width: 100%; max-width: none;}
-
-  .studio-child {margin: auto; width: 100%;}
-  #studio-text-gone {display: block;}
-  #studio-child-gone {display: none;}
-  #studio-icon {display: none;}
+  #demos-left {width: 100%;}
+  #demos-right {width: 80%; padding-bottom: 10%;}
 
   .social-a {display: none;}
   .content-head {padding-top: 10%;}
@@ -655,8 +662,10 @@ audio {
 
 @media(max-width: 543px)
 {
+  .studio-child{height: 100%;}
+  .internal-link-button {padding-bottom: 10%;}
+
   #full-name {display: none;}
   #half-name {display: block;}
-
   .topnav {display: block;}
 }
