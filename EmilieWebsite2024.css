@@ -68,7 +68,7 @@ li {list-style-type: none;}
 .nav-button:hover {color: var(--color-accent)}
 
 
-.goth-divider {
+.divider {
   border: none;
   height: 2px;
   background: linear-gradient(to right, transparent, var(--color-small-text), transparent);
