@@ -47,12 +47,12 @@ li {list-style-type: none;}
 .name {
   font-family: amiah;
   font-size: 3.375rem;
-  color: var(--color-accent);
+  color: var(--color-contrast-accent);
 }
 .name-mobile {  
   font-family: amiah;
   font-size: 3.375rem;
-  color: var(--color-accent);
+  color: var(--color-contrast-accent);
   margin-top: -10px;
 }
 .nav-button {
@@ -63,7 +63,7 @@ li {list-style-type: none;}
   color: var(--color-large-text);
   text-decoration: none;
 }
-.nav-button:hover {color: var(--color-accent)}
+.nav-button:hover {color: var(--color-contrast-accent)}
 
 .divider {
   border: none;
