@@ -47,12 +47,12 @@ li {list-style-type: none;}
 .name {
   font-family: amiah;
   font-size: 3.375rem;
-  color: var(--color-contrast-accent);
+  color: var(--color-accent);
 }
 .name-mobile {  
   font-family: amiah;
   font-size: 3.375rem;
-  color: var(--color-contrast-accent);
+  color: var(--color-accent);
   margin-top: -10px;
 }
 .nav-button {
