@@ -5,7 +5,6 @@
     --color-accent: #F5C6D6;
     --color-contrast-accent: #ff9edf;
     --color-title: #ff6ac1;
-    --color-bruh: #FFFFFF;
 }
 
 html {scroll-behavior: smooth;}
@@ -183,11 +182,21 @@ footer {
 
 
 
-
 .contact-socials {
   margin-top: 10px;
   margin-right: -12px;
 }
+.contact-socials img {
+  width: 32px;
+  padding-inline-end: 10px;
+  user-select: none;
+}
+.contact-socials a{
+  cursor: pointer;
+  transition: color, 0.3s;
+  text-decoration: none;
+}
+.contact-socials a:hover{color: var(--color-accent)}
 .footer {
   padding-bottom: 10px;
   display: flex;
@@ -198,21 +207,6 @@ footer {
   color: var(--color-large-text);
   text-align: center;
 }
-.socials {
-  width: 32px;
-  padding-inline-end: 10px;
-  user-select: none;
-}
-.social-holder {
-  padding-bottom: 3px;
-  margin-top: 10px;
-}
-.contact-socials a{
-  cursor: pointer;
-  transition: color, 0.3s;
-  text-decoration: none;
-}
-.contact-socials a:hover{color: var(--color-accent)}
 
 
 
