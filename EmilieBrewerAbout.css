@@ -59,7 +59,6 @@ footer {
 
 
 
-.email-link {
 .name {
   font-size: 3.375rem;
   color: var(--color-accent);
@@ -240,5 +239,6 @@ footer {
   .nav {display: none;}
   .footer-right {display: none;}
 }
+
 
 
