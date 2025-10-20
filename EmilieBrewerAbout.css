@@ -217,45 +217,6 @@ footer {
 }
 
 
-input:focus, textarea:focus {outline: none;}
-
-form{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-.form-container{margin-top: 40px;}
-#message{
-  border:none;
-  height:200px;
-  resize: none;
-}
-#email-address,
-#lname,#fname,#message{
-  background-color: var(--color-accent);
-  padding:15px 10px;
-  width:80%;
-  color: var(--color-large-text);
-  border: none;
-}
-#send-button{
-  cursor: pointer;
-  padding:15px 10px;
-  width:80%;
-  background-color: var(--color-large-text);
-  transition: color, 0.3s;
-  border: none;
-}
-#send-button:hover{
-  color: var(--color-large-text);
-  background-color: var(--color-accent);
-}
-#send-button:active{
-  background-color: var(--color-small-text);
-}
-
-
 
 @media(max-width: 1075px)
 {
@@ -279,4 +240,5 @@ form{
   .nav {display: none;}
   .footer-right {display: none;}
 }
+
 
